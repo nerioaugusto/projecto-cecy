@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <title>Carta de Amor Interativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .love-letter {
+            width: 400px;
+            margin: 0 auto;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        .button {
+            background-color: #ff5733;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #imagem {
+    display: none; /* Oculta a imagem por padrão */
+  }
+
+         img.pequena{
+    max-width: 450px;
+    height: 400px;
+    display: block;
+    margin: auto;
+         }
+
+         #audio {
+    display: none; /* Oculta o áudio por padrão */
+  }
+    </style>
+</head>
+<body>
+    <div class="love-letter">
+        <h1>Minha Querida Elliany</h1>
+        <p class="message">Ihh acho que nem vias mais a hora, já não aguentavas esperar e tavas bem ansiosaa por esse dia nem❤️❤️</p>
+        
+        <button class="button" onclick="mostrarMensagem()">Clique para Revelar uma Mensagem Especial</button>
+        <p id="mensagem-especial" style="display: none; font-size: 20px; font-weight: bold; margin-top: 20px;"></p>
+        <button class="button" onclick="mostrarSurpresa()">Clique para Revelar uma Surpresa</button>
+        <p id="surpresa" style="display: none; font-size: 20px; font-weight: bold; margin-top: 20px;"></p>
+
+       
+
+    </div>
+
+    
+
+    
+      
+    
+   
+
+    <script>
+        function mostrarMensagem() {
+            const mensagemEspecial = "Feliz aniversário Best❤️❤️que tenhas muitos e longos anos de vida e que essa data se repita por muitos anos. Tenha muito amor,saúde, sucessos, dinheiro e menos homens na sua vida, se bem que isso é impossível nem😅  Continue sempre sendo essa gaja simpática, alegre, sorridente, divertida e boa amiga como tens sido sempre ❤️ mesmo conversando contigo estando triste, você sempre alegra os meus dias ☺️ contigo dá mesmo para conversar de tudo, é desses amigos que estava a precisar na minha vida ❤️❤️ ";
+            document.getElementById("mensagem-especial").style.display = "block";
+            document.getElementById("mensagem-especial").textContent = mensagemEspecial;
+        }
+
+        function mostrarSurpresa() {
+           
+            const surpresa = " Continue sempre sendo essa gaja simpática, alegre, sorridente, divertida e boa amiga como tens sido sempre ☺️❤️ mesmo conversando contigo estando triste, você sempre alegra os meus dias ☺️ contigo dá mesmo para conversar de tudo, é desses amigos que estava a precisar na minha vida ❤️❤️ Ihh já és maior de idade aweenna, quando  começamos a falar  ainda eras uma danoninha e agora já virou uma manga bem verde 😍 apesar de que seu comportamento as vezes era de uma gaja já bem crescida nem 😅 Mais responsabilidades aí porque já podes ir presa... Até queria dizer menos brincadeiras mas você e essa palavra são bests mesmo 😅Espero que você aproveite muito bem o seu dia porque você merece 👌Parabéns Best Ly ❤️❤️";
+            document.getElementById("surpresa").style.display = "block";
+            document.getElementById("surpresa").textContent = surpresa;
+            
+        }
+
+        function mostrarBest() {
+           
+           const best = " Nessa foto ainda eras mesmo uma danonina, acho que foi mesmo na época em que começamos a falar... yha já somos mesmo de muito tempo pha. Aí já dava para perceber que eras mesmo bandida apesar de teres essa cara fofinha e isso ainda não mudou nem, continua com uma cara fofinha mas bem bandida  😅";
+           document.getElementById("best").style.display = "block";
+           document.getElementById("best").textContent = best;
+           
+       }
+
+        
+      
+
+       
+      
+
+    </script>
+
+<script>
+
+
+  
+  
+  </script>
+         
+    <button onclick="mostrarImagem()">Clique para mostrar a imagem</button>
+
+    <img id="imagem" src="cecy.jpg" class="pequena"   alt="Imagem">
+    
+    <script>
+    function mostrarImagem() {
+      var imagem = document.getElementById("imagem");
+      imagem.style.display = "block"; // Exibe a imagem quando o botão é clicado
+    }
+    </script>
+
+<div>
+  <button class="button" onclick="mostrarBest()">Clique para Revelar best </button>
+  <p id="best" style="display: none; font-size: 20px; font-weight: bold; margin-top: 20px;"></p>
+</div>
+
+ 
+      <!--<img src="IMG-20221024-WA0041.jpg" class="pequena"   alt="cecy">  --> 
+
+    <button onclick="tocarAudio()">Clique para tocar o áudio</button>
+
+<audio id="audio" controls>
+  <source src="Parabéns Gaúcho(MP3_160K).mp3" type="audio/mpeg">
+  Seu navegador não suporta o elemento de áudio.
+</audio>
+
+<script>
+function tocarAudio() {
+  var audio = document.getElementById("audio");
+  audio.style.display = "block"; // Exibe o áudio quando o botão é clicado
+  audio.play(); // Toca o áudio
+}
+</script>
+
+
+</body>
+</html>
